@@ -23,4 +23,4 @@ jobs:
           context: .
           file: docker/Dockerfile.be
           push: true
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/todo-be:{{ github.sha }}
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/todo-be:${{ github.sha }}
